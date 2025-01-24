@@ -149,6 +149,12 @@ const showingNavigationDropdown = ref(false);
                         >
                             Dashboard
                         </ResponsiveNavLink>
+                        <ResponsiveNavLink
+                            :href="route('chirps.index')"
+                            :active="route().current('chirps.index')"
+                        >
+                            Chirps
+                        </ResponsiveNavLink>
                     </div>
 
                     <!-- Responsive Settings Options -->
